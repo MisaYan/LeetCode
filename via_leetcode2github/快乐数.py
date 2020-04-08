@@ -1,6 +1,6 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        
+        #创建一个Hashset 记录循环数字，若重复出现则停止迭代
         def get_next(n):
             total_sum = 0
             while n > 0:
